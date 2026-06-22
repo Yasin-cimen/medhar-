@@ -1,0 +1,6 @@
+node_modules/
+medhar_db.json
+*.pdf
+*.docx
+*.xlsx
+package-lock.json
