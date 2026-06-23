@@ -218,15 +218,15 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   display:flex;width:900px;max-width:96%;
   background:white;border-radius:22px;
   box-shadow:0 30px 70px rgba(0,0,0,0.12);overflow:hidden;
-  min-height:560px;
+  height:560px;
 }
 
 /* Left panel */
 .auth-left{
-  flex:0 0 340px;
+  flex:0 0 320px;
   background:linear-gradient(145deg,var(--primary-dark) 0%,var(--primary) 60%,var(--primary-light) 100%);
-  padding:50px 40px;display:flex;flex-direction:column;justify-content:center;align-items:center;
-  text-align:center;color:white;position:relative;overflow:hidden;
+  padding:40px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;color:white;position:relative;overflow:hidden;flex-shrink:0;
 }
 .auth-left::before{
   content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
@@ -680,12 +680,6 @@ tr:hover td{background:#fafbff}
         <div class="auth-logo-box floating">🧬</div>
         <h1>MEDHAR</h1>
         <p>Genomik Karar Destek Sistemi</p>
-        <div class="auth-left-features">
-          <div class="auth-feature"><div class="auth-feature-dot"></div>LightGBM / XGBoost analiz motoru</div>
-          <div class="auth-feature"><div class="auth-feature-dot"></div>SHAP/LIME açıklanabilirlik modülü</div>
-          <div class="auth-feature"><div class="auth-feature-dot"></div>Gerçek zamanlı ClinVar senkronizasyonu</div>
-          <div class="auth-feature"><div class="auth-feature-dot"></div>Dinamik karar eşiği (τ) kalibrasyonu</div>
-        </div>
       </div>
     </div>
 
