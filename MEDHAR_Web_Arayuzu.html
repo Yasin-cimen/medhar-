@@ -1669,14 +1669,14 @@ function updateExplain(val) {
 // ════════════════════════════════════════
 const authCanvas = document.createElement('canvas');
 authCanvas.id = 'auth-matrix-canvas';
-authCanvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.55;';
+authCanvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.85;';
 const authPage = document.getElementById('authPage');
 authPage.style.position = 'relative';
 authPage.insertBefore(authCanvas, authPage.firstChild);
 const actx = authCanvas.getContext('2d');
 
 const EMOJIS = ['🩺','💉','💊','🧬','⚕️','🔬','🧫','🏥','🩹','🩸','🦠','🫀','🫁','🧪'];
-const COLS = 28;
+const COLS = 60;
 let drops = [];
 let authAnimId = null;
 
@@ -1690,7 +1690,7 @@ function initMatrix() {
     speed: Math.random() * 1.2 + 0.6,
     emoji: EMOJIS[Math.floor(Math.random()*EMOJIS.length)],
     size: Math.random() * 8 + 16,
-    opacity: Math.random() * 0.12 + 0.06
+    opacity: Math.random() * 0.25 + 0.15
   }));
 }
 
@@ -1705,7 +1705,7 @@ function drawMatrix() {
     if(d.y > authCanvas.height + 40) {
       d.y = -40;
       d.emoji = EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
-      d.opacity = Math.random() * 0.12 + 0.06;
+      d.opacity = Math.random() * 0.25 + 0.15;
     }
   });
   actx.globalAlpha = 1;
