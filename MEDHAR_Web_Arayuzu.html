@@ -218,6 +218,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   display:flex;width:900px;max-width:96%;
   height:580px;
   background:white;border-radius:22px;
+  position:relative;z-index:1;
   box-shadow:0 30px 70px rgba(0,0,0,0.12);overflow:hidden;
 }
 
@@ -1676,7 +1677,7 @@ authPage.insertBefore(authCanvas, authPage.firstChild);
 const actx = authCanvas.getContext('2d');
 
 const EMOJIS = ['🩺','💉','💊','🧬','⚕️','🔬','🧫','🏥','🩹','🩸','🦠','🫀','🫁','🧪'];
-const COLS = 60;
+const COLS = 85;
 let drops = [];
 let authAnimId = null;
 
