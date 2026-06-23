@@ -378,7 +378,7 @@ app.get('/api/audit-logs', requireAuth, requireRole('admin'), async (req, res) =
 
 // ── HTML dosyasını sun ────────────────────────────────────
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'MEDHAR_Web_Arayuzu.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // ── Sunucuyu başlat ───────────────────────────────────────
